@@ -285,8 +285,14 @@ color: #fff;
 	box-shadow:0px 0px 0px 7px rgba(241,241,241,0.80);
 	margin:7px 7px 25px 7px;
 }
+
+.team-leader:hover {
+  background: #485563;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .team-leader-img {
-  background:url(../img/portrait-placeholder.png);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -295,7 +301,7 @@ color: #fff;
   border-radius: 50%;
 }
 .team-leader:hover .team-leader-img {
-  filter: brightness(50%);
+  opacity: 0.4;
   transition: 0.3s;
 }
 .team-leader-shadow{
@@ -451,24 +457,7 @@ color: #fff;
 	animation-delay: 0.9s; 
 	-webkit-animation-delay: 0.9s; 
 }
-
-.delay-12s { 
-	animation-delay: 1.2s; 
-	-webkit-animation-delay: 1.2s; 
-}
-.delay-15s { 
-	animation-delay: 1.5s; 
-	-webkit-animation-delay: 1.5s; 
-}
-.delay-18s { 
-	animation-delay: 1.8s; 
-	-webkit-animation-delay: 1.8s; 
-}
 .delay-1s { 
 	animation-delay: 1s; 
 	-webkit-animation-delay: 1s; 
-}
-.delay-12s { 
-	animation-delay: 1.2s; 
-	-webkit-animation-delay: 1.2s; 
 }
