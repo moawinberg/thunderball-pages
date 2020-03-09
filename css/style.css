@@ -250,7 +250,7 @@ color: #fff;
 /* Team
 ---------------------------------*/
 .main-section.team{
-	padding:85px 0;
+	padding: 100px 0;
 }
 .main-section.team h6{
 	margin-bottom:40px;
@@ -262,19 +262,21 @@ color: #fff;
   flex-flow: wrap;
 }
 .team-leader-box{
-	width:30.66%;
+	width: 30.66%;
 	margin-right: 3.82979%;
-	height: 420px;
 	overflow: hidden;
 	text-align: center;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
+  margin-top: 25px;
+  text-align: center;
 }
 .team-leader-box span{
-	margin-bottom:10px;
-	display:block;
+	margin-bottom: 20px;
+  margin-top: 10px;
+	display: block;
 }
 .team-leader-box:nth-of-type(3n+0){ margin:0;}
 .team-leader{
