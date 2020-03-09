@@ -239,11 +239,18 @@ color: #fff;
           transition-property:         transform, opacity;
 }
 
+.main-section.about {
+  background: #fafafa;
+}
+
+.upper {
+  text-transform: capitalize;
+}
+
 /* Team
 ---------------------------------*/
 .main-section.team{
 	padding:85px 0;
-  background: #fafafa;
 }
 .main-section.team h6{
 	margin-bottom:40px;
