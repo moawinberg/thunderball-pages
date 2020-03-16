@@ -29,7 +29,6 @@
 </head>
 
 <body>
-
   <header class="header" id="header">
     <video id="video" playsinline autoplay loop muted preload src="video/vid1.mp4" type="video/mp4"
       poster="img/video-placeholder.png">
@@ -62,40 +61,95 @@
   <section class="main-section" id="vis">
     <div class="container">
       <h2>VISUALIZATION</h2>
-      <div class="row flexbox-center">
+      <div class="top-bottom-space">
         <iframe src="https://moawinberg.github.io/project-thunderball/" width="100%" height="650"></iframe>
+        <a href="https://moawinberg.github.io/project-thunderball/">Open source</a>
       </div>
-      <a href="https://moawinberg.github.io/project-thunderball/">Open source</a>
     </div>
   </section>
 
-  <section class="main-section" id="about">
+  <section class="main-section about" id="about">
     <div class="container">
       <h2>ABOUT</h2>
-      <div class="row flexbox-center top-bottom-space">
-        <div style="flex-direction: column; text-align: left;">
-          <h4>Project description</h4>
-          Thunderball is a weather forecast visualization service, with the aim to help the energy sector with
-          predictions. The project was created in the course DH2321
-          Information Visualization at KTH, Royal Institute of Technology, Stockholm. The data is
-          provided by Greenlytics.io through their weather forecast API.
-
-          Thunderball allows the user to see temperature and wind speed at different times of the day, as predicted by different weather forecasts.
-          The user can zoom and pan around the map, search for certain locations using the search bar, get details by hovering different areas and switch between
-          different model runs using the timeline at the top.
-          <h4>Learning objectives reached</h4>
-          <ul>
-            <li>We have created a product which we are all satisfied with given the restricted time frame.</li>
-            <li>Furthered our skills in different libraries and languages, such as: D3, JavaScript, HTML, CSS and React</li>
-            <li>Gotten better at working with large amounts of data.</li>
-            <li>learned about visualizing temporal and geographical data in intuitive ways</li>
-            <li>Understanding and implementing the information visualization mantra: <i>"Overview first, zoom and filter, then details on demand."</i></li>
-          </ul>
+      <h6>About the project and our learning objectives reached.</h6>
+      <div class="wow" style="display: flex; justify-content: space-around">
+        <div class="col-lg-4 col-sm-6 wow fadeInLeft">
+          <h4>Project Description</h4>
+          <p>
+            Thunderball is a weather forecast visualization service, with the aim to help the energy sector with
+            predictions.
+            <br />
+            <br />
+            The project was created in the course DH2321 Information Visualization at KTH, Royal Institute of
+            Technology, Stockholm.
+            <br />
+            The data is provided by <a href="https://greenlytics.io/">Greenlytics.io</a> through their weather forecast
+            API.
+            <br />
+            <br />
+            Thunderball allows the user to see temperature and wind speed at different times of the day,
+            <br />
+            as predicted by
+            different weather forecasts.
+            <br />
+            <br />
+            The user can zoom and pan around the map, search for certain locations using the search bar, get details by
+            hovering different areas and switch between different model runs using the timeline at the top.
+          </p>
         </div>
-
+        <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-02s">
+          <div class="wow fadeInRight delay-05s">
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="fas fa-hourglass-end"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Working with deadline</h3>
+                <p>We created a product which we are all satisfied with given the restricted time frame.</p>
+              </div>
+            </div>
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="fa fa-code"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Programming skills</h3>
+                <p>We improved skills in libraries and languages such as: D3, JavaScript, HTML, CSS and React.</p>
+              </div>
+            </div>
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Data handling skills</h3>
+                <p>We got better at working with large amounts of data.</p>
+              </div>
+            </div>
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="fas fa-map"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Visualization skills</h3>
+                <p>We learned about visualizing temporal and geographical data in intuitive ways.</p>
+              </div>
+            </div>
+            <div class="service-list">
+              <div class="service-list-col1">
+                <i class="fas fa-magic"></i>
+              </div>
+              <div class="service-list-col2">
+                <h3>Applying the mantra</h3>
+                <p>We applied the infoViz mantra: <i>"Overview first, zoom and filter, then details on demand".</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
   <section class="main-section team" id="team">
     <div class="container">
       <h2>team</h2>
@@ -177,7 +231,8 @@
           <h3 class="wow fadeInDown delay-06s">Mattias Larsson</h3>
           <span class="wow fadeInDown delay-06s upper">Developer | Graphical Content</span>
           <p class="wow fadeInDown delay-06s">Mattias has used his versatile skillset to help build the main
-            visualization in the app, as well as this website. He has used his computer science skills to process the data.</p>
+            visualization in the app, as well as this website. He has used his computer science skills to process the
+            data.</p>
         </div>
         <div class="team-leader-box">
           <div class="team-leader wow fadeInDown delay-09s">
@@ -204,7 +259,6 @@
       <span class="copyright">Thunderball &copy; 2020</span>
     </div>
   </footer>
-
 
   <script type="text/javascript">
     $(document).ready(function (e) {
@@ -244,6 +298,51 @@
       });
     })
   </script>
+
+  <script type="text/javascript">
+    $(window).load(function () {
+
+      var $container = $('.portfolioContainer'),
+        $body = $('body'),
+        colW = 375,
+        columns = null;
+
+
+      $container.isotope({
+        // disable window resizing
+        resizable: true,
+        masonry: {
+          columnWidth: colW
+        }
+      });
+
+      $(window).smartresize(function () {
+        // check if columns has changed
+        var currentColumns = Math.floor(($body.width() - 30) / colW);
+        if (currentColumns !== columns) {
+          // set new column count
+          columns = currentColumns;
+          // apply width to container manually, then trigger relayout
+          $container.width(columns * colW)
+            .isotope('reLayout');
+        }
+
+      }).smartresize(); // trigger resize to set container width
+      $('.portfolioFilter a').click(function () {
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+
+          filter: selector,
+        });
+        return false;
+      });
+
+    });
+  </script>
+
 </body>
 
 </html>
