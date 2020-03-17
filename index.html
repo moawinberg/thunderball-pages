@@ -30,7 +30,7 @@
 
 <body>
   <header class="header" id="header">
-    <video id="video" playsinline autoplay loop muted preload src="video/vid1.mp4" type="video/mp4"
+    <video class="video" id="video" playsinline autoplay loop muted preload src="video/vid1.mp4" type="video/mp4"
       poster="img/video-placeholder.png">
     </video>
     <div class="container header-content">
@@ -62,8 +62,13 @@
     <div class="container">
       <h2>VISUALIZATION</h2>
       <div class="top-bottom-space">
+        Recording
+        <video id="demo" poster="img/demo-poster.png" class="demo" preload="auto" controls="controls" width="100%"
+          height="auto" src="video/demo.mp4" type="video/mp4"></video>
+      </div>
+      <div>
+        Live Demo <a href="https://moawinberg.github.io/project-thunderball/">(open source)</a>
         <iframe src="https://moawinberg.github.io/project-thunderball/" width="100%" height="650"></iframe>
-        <a href="https://moawinberg.github.io/project-thunderball/">Open source</a>
       </div>
     </div>
   </section>
@@ -72,7 +77,7 @@
     <div class="container">
       <h2>ABOUT</h2>
       <h6>About the project and our learning objectives reached.</h6>
-      <div class="wow" style="display: flex; justify-content: space-around">
+      <div class="wow top-bottom-space" style="display: flex; justify-content: space-around">
         <div class="col-lg-4 col-sm-6 wow fadeInLeft">
           <h4>Project Description</h4>
           <p>

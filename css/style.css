@@ -79,7 +79,7 @@ p{
 
 /* Header Styles
 ---------------------------------*/
-video {
+.video {
   position: absolute;
   top: 0;
   left: 0;
@@ -90,6 +90,13 @@ video {
   -o-object-position: center;
      object-position: center;
 }
+
+.demo {
+  height: 100%;
+  border: 1px solid black;
+  width: 100%;
+}
+
 .header{
   overflow: hidden;
 	text-align:center;
@@ -118,7 +125,8 @@ video {
   text-align: center;
 }
 .top-bottom-space {
-  padding: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .we-create{
